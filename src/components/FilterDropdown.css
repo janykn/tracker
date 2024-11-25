@@ -1,0 +1,74 @@
+/*Not using now, This filter option may be used in future*/
+
+.filterhead {
+    margin-right: 5px;
+  }
+  
+  .filter-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-options {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    z-index: 1;
+  }
+  
+  .filter-options-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .filter-option {
+    flex: 1;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 30px;
+    padding: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filter-option.selected {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .filter-save {
+    padding: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-save:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 600px) {
+    .filter-options {
+      flex-direction: column;
+    }
+  
+    .filter-option {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+  

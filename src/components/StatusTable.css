@@ -1,0 +1,163 @@
+/* client/src/components/StatusTable.css */
+
+@supports (-webkit-touch-callout: none) {
+  .status-table th {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  .status-table td {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+.table-container {
+  margin-top: 13px;
+  overflow-x: auto;
+  max-height: 500px;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px 0px 10px 0px;
+  /* font-size:14px; */
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.status-table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: rgba(29, 29, 31);
+}
+
+.status-table th {
+  border: 1px solid #ddd;
+  padding: 7px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  background-color: #4caf50;
+  color: white;
+  font-size: 13px;
+}
+
+.delivered-status,
+.transit-status,
+.cancelled-status,
+.error-status,
+.out-for-delivery-status {
+  border: 2px solid #ddd;
+}
+
+.error-status {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.delivered-status {
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 2px solid black;
+}
+
+.transit-status {
+  background-color: rgba(255, 255, 0, 0.1);
+  color: black;
+}
+
+.cancelled-status {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: black;
+}
+
+.out-for-delivery-status {
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 2px solid green;
+}
+
+.def-status{
+  background-color: rgba(135, 206, 235, 0.6);
+}
+.current-page-info {
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  /* border: 1px solid #ccc; */
+  margin-top: 0px;
+}
+
+.pagination-container {
+  display: flex;
+  background-color: rgba(0,0,0,0.15);
+  padding: 6px 8px 6px 8px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.pagination-button {
+  background-color: rgba(0,0,0,0.81);
+  color: white;
+  font-size: 1px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.pagination-button:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+.page-number {
+  color: rgba(0,0,0,0.7);
+  padding: 5px; /* Adjusted padding */
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-number.active {
+  background-color: rgba(0, 0, 0, 0.81);
+  color: rgba(255,255,255,0.71);
+  opacity: 1;
+}
+
+.page-number:hover {
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,0.71);
+  opacity: 1;
+}
+
+
+.dots {
+  margin: 0 5px;
+}
+
+.status-table .details-button {
+  background-color: rgba(0, 0, 0, 0.81);
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width:50%;
+  font-size: 13px; /* Decrease font size */
+  padding: 5px 10px; /* Adjust padding as needed */
+}
+
+.status-table .details-button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .status-table th,
+  .status-table td {
+    padding: 8px;
+    font-size: 13px;
+  }
+}

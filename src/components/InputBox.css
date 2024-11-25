@@ -1,0 +1,45 @@
+/* client/src/components/InputBox.css */
+
+.input-box-container {
+    margin-bottom: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #F2F2F2;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    font-family: 'Lato';
+    outline: none;
+    border-radius: 0px;
+  }
+  
+  .input-box::placeholder {
+    font-size: 14px;
+  }
+  
+  .track-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+  
+  .track-button:hover {
+    background-color: black;
+  }
+  @media screen and (max-width: 768px) {
+    .input-box::placeholder {
+      font-size: 14px;
+    }
+  }  

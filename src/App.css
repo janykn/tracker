@@ -1,0 +1,126 @@
+/* client/src/components/App.css */
+@supports (-webkit-touch-callout: none) {
+  th {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  td {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: rgba(29,29,31);
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+h5{
+  display: none;
+}
+/* h5{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.56);
+  margin-top: 0px;
+  margin-bottom: 20px;
+} */
+
+/* For iOS devices, use the system font (SF Pro) */
+@supports (-webkit-touch-callout: none) {
+  h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(29,29,31);
+  }
+  h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.56);
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/lorry.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: min(76ch, 100% - 5rem);
+  margin-inline: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow-y: auto;
+  margin: 50px 20px 20px 20px;
+  padding: 25px 50px 40px 50px;
+  max-height: calc(100vh);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .container .card-container .left-half h1 span.NavScs{
+    display: none;
+  }
+
+  h5{
+    display: inline;
+    margin:0;
+    margin-bottom:13px;
+    padding:0;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    margin: 5px;
+    margin-top: 45px;
+    padding: 12px 30px 30px 30px;
+    width: 80%;
+    max-height: calc(100vh);
+  }
+
+  .row-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .input-box {
+    flex: 1;
+  }
+  
+  .loader-container {
+    margin-left: 10px; 
+  }
+}
+
+.left-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.loader-container {
+  margin-top: 10px;
+}
+
